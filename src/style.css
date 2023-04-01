@@ -1,0 +1,70 @@
+:root{  
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(227, 10%, 46%);
+    --card-color: hsl(0, 0%, 59%);
+}
+
+body{
+    background-color: var(--background-color);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+hr{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 330px;
+    height: 350px;
+}
+
+.cartao .informacoes-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.cartao .informacoes-perfil img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.cartao .numeros-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center; 
+}
+
+.numero-perfil .info .contador, 
+.cartao .informacoes-perfil p{
+    font-weight: 700;
+}
+
+.cartao .informacoes-perfil .idade,
+.cartao .informacoes-perfil .cidade, 
+.numero-perfil .info .ctipo-contador{
+    color: var(--text-color);
+}
